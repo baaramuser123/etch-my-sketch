@@ -1,3 +1,7 @@
+:root {
+    --rowCount: 16;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,15 +12,15 @@
     justify-content: center;
     /* max-width: 100%;
     height: calc(100vh - 16px); */
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     border: 1px, solid, black;
     flex-wrap: wrap;
 }
 
 .item {
     /* flex: 0 0 6.25%; */
-    flex: 0 0 calc(100%/16);
+    flex: 0 0 calc(100%/var(--rowCount));
 
     /* flex: 1 1 0; */
 
